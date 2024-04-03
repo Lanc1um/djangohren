@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" href="{% static 'skynet/css/styles.css' %}" rel="stylesheet" />
+    <script src="{% static 'skynet/js/script.js' %}"></script>
+    <meta charset="UTF-8">
+    {% block title%}
+    {% endblock %}
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" class="logo" src="{% static 'skynet/images/abc.jpg' %}" alt="123" onclick="testt()">
+            <ul class="mainmenu">
+                {% for i in menu%}
+                {% if not forloop.last %}
+                <li><a href="{% url i.name %}">{{i.title}}</a></li>
+                {% else %}
+                <li class="last_menu"><a href="{% url i.name %}">{{i.title}}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+
+
+    {% block content%}
+    {% endblock %}
+
+
+</body>
+
+
+</html>

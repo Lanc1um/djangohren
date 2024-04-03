@@ -1,0 +1,106 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>36ca5090-e85a-4b42-aa3b-f2430da62612</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>WebProject.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>WebProject</Name>
+    <RootNamespace>WebProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="OutOfEnemy\asgi.py" />
+    <Compile Include="OutOfEnemy\settings.py" />
+    <Compile Include="OutOfEnemy\urls.py" />
+    <Compile Include="OutOfEnemy\wsgi.py" />
+    <Compile Include="OutOfEnemy\__init__.py" />
+    <Compile Include="skynet\admin.py" />
+    <Compile Include="skynet\apps.py" />
+    <Compile Include="skynet\migrations\0001_initial.py" />
+    <Compile Include="skynet\migrations\__init__.py" />
+    <Compile Include="skynet\models.py" />
+    <Compile Include="skynet\tests.py" />
+    <Compile Include="skynet\urls.py" />
+    <Compile Include="skynet\views.py" />
+    <Compile Include="skynet\__init__.py" />
+    <Compile Include="WebProject.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".idea\" />
+    <Folder Include=".idea\inspectionProfiles\" />
+    <Folder Include="OOE\" />
+    <Folder Include="OutOfEnemy\" />
+    <Folder Include="OutOfEnemy\__pycache__\" />
+    <Folder Include="skynet\" />
+    <Folder Include="skynet\migrations\" />
+    <Folder Include="skynet\migrations\__pycache__\" />
+    <Folder Include="skynet\static\" />
+    <Folder Include="skynet\static\skynet\" />
+    <Folder Include="skynet\static\skynet\css\" />
+    <Folder Include="skynet\static\skynet\images\" />
+    <Folder Include="skynet\static\skynet\js\" />
+    <Folder Include="skynet\templates\" />
+    <Folder Include="skynet\templates\skynet\" />
+    <Folder Include="skynet\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".idea\.gitignore" />
+    <Content Include=".idea\inspectionProfiles\profiles_settings.xml" />
+    <Content Include=".idea\inspectionProfiles\Project_Default.xml" />
+    <Content Include=".idea\misc.xml" />
+    <Content Include=".idea\modules.xml" />
+    <Content Include=".idea\OutOfEnemy.iml" />
+    <Content Include="db.sqlite3" />
+    <Content Include="OutOfEnemy\__pycache__\settings.cpython-39.pyc" />
+    <Content Include="OutOfEnemy\__pycache__\urls.cpython-39.pyc" />
+    <Content Include="OutOfEnemy\__pycache__\wsgi.cpython-39.pyc" />
+    <Content Include="OutOfEnemy\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="skynet\migrations\__pycache__\0001_initial.cpython-39.pyc" />
+    <Content Include="skynet\migrations\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="skynet\static\skynet\css\styles.css" />
+    <Content Include="skynet\static\skynet\images\1.png" />
+    <Content Include="skynet\static\skynet\images\123.jpg" />
+    <Content Include="skynet\static\skynet\images\2.png" />
+    <Content Include="skynet\static\skynet\images\abc.jpg" />
+    <Content Include="skynet\static\skynet\images\skynet.jpg" />
+    <Content Include="skynet\static\skynet\images\ter.jpg" />
+    <Content Include="skynet\static\skynet\js\123.txt" />
+    <Content Include="skynet\static\skynet\js\main.js" />
+    <Content Include="skynet\static\skynet\js\sc.js" />
+    <Content Include="skynet\static\skynet\js\script.js" />
+    <Content Include="skynet\templates\skynet\article.html" />
+    <Content Include="skynet\templates\skynet\services.html" />
+    <Content Include="skynet\templates\skynet\index.html" />
+    <Content Include="skynet\templates\skynet\login.html" />
+    <Content Include="skynet\templates\skynet\main.html" />
+    <Content Include="skynet\templates\skynet\test.html" />
+    <Content Include="skynet\__pycache__\admin.cpython-39.pyc" />
+    <Content Include="skynet\__pycache__\apps.cpython-39.pyc" />
+    <Content Include="skynet\__pycache__\models.cpython-39.pyc" />
+    <Content Include="skynet\__pycache__\urls.cpython-39.pyc" />
+    <Content Include="skynet\__pycache__\views.cpython-39.pyc" />
+    <Content Include="skynet\__pycache__\__init__.cpython-39.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

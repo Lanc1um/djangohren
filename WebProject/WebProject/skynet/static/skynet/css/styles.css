@@ -1,0 +1,114 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	color: #000;
+	background: #e5e5e5;
+}
+
+
+/*<style >
+.abs-image {
+    position: absolute;
+    top: 50px;*/ /* Расстояние сверху */
+    /*left: 100px;*/ /* Расстояние слева */
+/*}
+
+</style >*/
+
+header {
+    overflow: hidden;
+    background: black;
+}
+
+.logo {
+    float:left;
+	width: 70px;
+	height: 60px;
+}
+
+ul.mainmenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #fdc073;
+	font-size: 20px;
+}
+
+ul.mainmenu li {
+	float: left;
+	margin: 18px 5% 0 30px;
+}
+
+ul.mainmenu li a {
+	color: #fdc073;
+	text-decoration: none;
+}
+
+ul.mainmenu li a:hover {
+	color: #fd3b3b;
+}
+
+ul.mainmenu li.last_menu{
+    float: right;
+}
+
+footer {
+    flex:0 0 auto;
+    background:#565050;
+}
+
+.socseti {
+    width:20px;
+    height:20px;
+}
+
+.footer-info {
+    text-align: center;
+    color: #fdc073;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content ul{
+    list-style: none;
+}
+
+.content ul li{
+    width:30%;
+    float:left;
+    text-align:center;
+    background: #ffffff;
+    margin-right:20px;
+    padding:5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.text-content{
+    float:left;
+    margin:40px;
+}
+
+.content{
+    display:flex;
+    flex-direction:column;
+}
+
+.image_test img,button{
+    width:40%;
+    margin-left:30%;
+}
+
+
+
+nav .icon {
+  display: none;
+}
+
+.fa-bars {
+    color:white;
+}

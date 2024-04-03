@@ -1,0 +1,1 @@
+function add_image(){    imgb.src='/static/skynet/images/кот.png';}var t = 0;var st = 1;var imgb = document.createElement('img');imgb.alt = 'лиса с сигарой';imgb.addEventListener("click", add_image);imgb.src='/static/skynet/images/avava.png';imgb.height = 120;imgb.width = 120;footer = document.getElementById('foot');footer.appendChild(imgb);

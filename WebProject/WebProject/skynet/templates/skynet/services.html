@@ -1,0 +1,21 @@
+{% extends 'skynet/main.html' %}
+
+{% block content%}
+<ul>
+    {% for i in services %}
+    <a href="{% url 'service' i.pk %}">
+        <li>
+            <h3>
+                {{ i.title }}
+            </h3>
+            <p>
+                {{ i.content }}
+            </p>
+        </li>
+    </a>
+    {% endfor %}
+</ul>
+
+
+
+{% endblock %}
